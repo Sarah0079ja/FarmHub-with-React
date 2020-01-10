@@ -1,0 +1,15 @@
+.sec{
+    display: flex;
+}
+.header1{
+    color: yellowgreen;
+    font-size: larger;
+    display: flex;
+}
+.sec1{
+    margin-top: 10%;
+}
+.sec-badge{
+    margin-right: 5%;
+    align-items: center;
+}

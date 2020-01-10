@@ -1,0 +1,46 @@
+.newimg{
+    position: relative;
+    left: 20%
+    
+}
+.newimg2{
+  position: absolute;
+  top: 18.7%;
+  left: 60%;
+
+}
+.Howitworkss{
+    background-color: #fafafa;
+}
+.p6{
+    position: absolute;
+    top: 42%;
+    left: 80%;
+    color: white;
+    font-size: 35px;
+}
+.Howw{
+    margin-left: 30px;
+}
+.how{
+    color: yellowgreen;
+    padding-top: 40px;
+}
+.works{
+    padding-top: 30px;
+    margin-top: 15px;
+    color: yellowgreen
+    /* margin-left: 20px; */
+}
+.card{
+    width: 15rem; 
+    border: 1px solid #ACBB16
+}
+.card-body{
+    padding:1rem 0!important
+}
+.coll{
+    max-width: 140%;
+    padding: 0px 
+}
+

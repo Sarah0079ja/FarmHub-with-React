@@ -1,0 +1,27 @@
+ .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.newimg{
+  position: relative;
+  
+}
+.newimg2{
+position: absolute;
+top: 18.7%;
+left: 10%;
+
+}

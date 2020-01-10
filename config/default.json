@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://Sarah:Farmhub007@farmhub-6sqzt.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "Fh_myJwtSecret"
+}
