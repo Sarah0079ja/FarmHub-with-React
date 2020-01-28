@@ -27,7 +27,6 @@
     "farmhub": "npm start --prefix farmhub",
     "dev": "concurrently \"npm run server\"npm run farmhub\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix farmhub && npm run build --prefix farmhub"
-   
   },
   "author": "Sarah odiavbara",
   "license": "MIT"
