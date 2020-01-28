@@ -27,7 +27,7 @@ const Card = (props) => {
               Invest Today
             </Link>
               */}
-            <FormModal />
+            <FormModal/>
           </div>
         </div>
       </Container>
