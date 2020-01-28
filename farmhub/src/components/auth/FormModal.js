@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
+ import { Link } from "react-router-dom";
 // import "./Stylecard.css";
 import {
   Button,
@@ -9,6 +10,7 @@ import {
   // FormGroup,
   Label,
   Input,
+  NavItem,
   NavLink,
   Alert,
   // NavItemProps
@@ -40,7 +42,7 @@ class FormModal extends Component {
   componentDidUpdate(prevProps) {
     const { error, isAuthenticated } = this.props;
     if (error !== prevProps.error) {
-      //check for registered error
+      //check for form error
       if (error.id === "FORM_FAIL") {
         this.setState({ msg: error.msg.msg });
       } else {
@@ -90,26 +92,27 @@ class FormModal extends Component {
   render() {
     return (
       <div>
-        {this.props.isAuthenticated ? (
-          <NavLink
+        { this.props.isAuthenticated ? (
+          <NavItem
             onClick={this.toggle}
             href="#"
             className="btn btn-outline-success"
           >
             Invest Today
-          </NavLink>
+          </NavItem>
         ) : (
-          <h9 className="mb-5 ml-4" id="logg">please log in</h9>
-        )}
+          <h4 className="mb-5 ml-4" id="logg">
+            please log in
+          </h4>
+        )} 
 
-        {/* <NavLink
+         {/* <NavLink
           onClick={this.toggle}
           href="#"
           className="btn btn-outline-success"
         >
           Invest Today
-        </NavLink> */}
-
+        </NavLink>   */}
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
           <ModalHeader toggle={this.toggle}>
             FarmHub Investment Form
@@ -123,8 +126,8 @@ class FormModal extends Component {
               <Input
                 type="text"
                 name="name"
-                id="name"
-                placeholder="Name"
+                id="firstname"
+                placeholder="FirstName"
                 className="mb-3"
                 onChange={this.onChange}
               />
@@ -133,8 +136,8 @@ class FormModal extends Component {
               <Input
                 type="text"
                 name="name"
-                id="name"
-                placeholder="Name"
+                id="lastname"
+                placeholder="LastName"
                 className="mb-3"
                 onChange={this.onChange}
               />
@@ -182,7 +185,12 @@ class FormModal extends Component {
                 onChange={this.onChange}
               />
 
-              <Button onClick={this.onSubmit} color="dark" style={{ marginTop: "2rem" }} block>
+              <Button
+                onClick={this.onSubmit}
+                color="dark"
+                style={{ marginTop: "2rem" }}
+                block
+              >
                 Invest Today
               </Button>
             </Form>
