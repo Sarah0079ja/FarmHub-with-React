@@ -1,2 +1,13 @@
 ./node_modules
 /farmhub/node_modules
+node_modules/.bin/loose-envify
+node_modules/.bin/loose-envify
+node_modules/.bin/loose-envify.cmd
+node_modules/.bin/loose-envify.ps1
+node_modules/js-tokens/
+node_modules/lodash.throttle/
+node_modules/loose-envify/
+node_modules/object-assign/
+node_modules/prop-types/
+node_modules/react-is/
+node_modules/react-scroll/
