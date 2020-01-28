@@ -14,7 +14,7 @@ const Select = props => {
         <option value="" disabled>
           {props.placeholder}
         </option>
-        {props.options.map(option => {
+        {props.option.map(option => {
           return (
             <option key={option} value={option} label={option}>
               {option}

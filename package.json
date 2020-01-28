@@ -13,6 +13,7 @@
     "mongoose": "^5.8.4",
     "react-card-carousel": "^1.1.3",
     "react-icons": "^3.8.0",
+    "react-scroll": "^1.7.15",
     "react-slick": "^0.25.2",
     "slick-carousel": "^1.8.1"
   },
@@ -20,8 +21,13 @@
     "nodemon": "^2.0.2"
   },
   "scripts": {
+    "farmhub-install": "npm install --prefix farmhub",
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "farmhub": "npm start --prefix farmhub",
+    "dev": "concurrently \"npm run server\"npm run farmhub\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix farmhub && npm run build --prefix farmhub"
+   
   },
   "author": "Sarah odiavbara",
   "license": "MIT"

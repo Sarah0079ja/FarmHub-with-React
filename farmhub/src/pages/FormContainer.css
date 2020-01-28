@@ -1,0 +1,71 @@
+ @import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,700&display=swap');
+ 
+ @media (max-width: 768px) {
+    #classicformpage .navbar:not(.top-nav-collapse) {
+     background: darkslategrey!important; 
+    }
+  }
+  
+  @media (min-width: 700px){ 
+    #forms {
+      margin-left: 25%;
+      margin-right: 20%;  
+      line-height: 15px;
+      width: 70%;
+      background: url(${farm3}) no-repeat fixed bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: 100vh;
+      border-radius: 5px;
+    }
+    .input{
+      border-radius: 5px;
+      width: 80%;
+       margin-left: 10%;
+      margin-right: 10%; 
+      line-height: 30px;
+  
+    }
+    
+    .overlay{
+      
+      margin-Left: 20%;
+      margin-Right: 20%
+  } 
+  
+   }
+
+
+  
+  .btn1{
+    margin-left: 38%;
+    line-height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    border-color: darkslategray;
+    background-color: yellowgreen;
+    
+  }
+  .jum{
+    right: 30;
+    margin-left: 20%;
+    top: 40px;
+    padding-top: 50px;
+    color: whitesmoke;
+    font-weight: 350;
+    font-size: x-large;
+}
+   
+  
+  .input{
+    border-radius: 5px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 30px;
+
+  }
+  .heading{
+  color:yellowgreen;
+  }
