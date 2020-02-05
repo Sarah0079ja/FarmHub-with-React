@@ -1,0 +1,28 @@
+{
+  "name": "farmhub",
+  "version": "1.0.0",
+  "description": "FarmHub agricultural investment app",
+  "main": "server.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.0.2",
+    "config": "^3.2.4",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "farmhub-install": "npm install --prefix farmhub",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "farmhub": "npm start --prefix farmhub",
+    "heroku-postbuild": "cd farmhub && npm install && npm run build"
+  },
+  "author": "Sarah odiavbara",
+  "license": "MIT"
+}
