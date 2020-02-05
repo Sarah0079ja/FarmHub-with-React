@@ -21,6 +21,7 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "farmhub": "npm start --prefix farmhub",
+    "dev": "concurrently \"npm run server\"npm run farmhub\"",
     "heroku-postbuild": "cd farmhub && npm install && npm run build"
   },
   "author": "Sarah odiavbara",
