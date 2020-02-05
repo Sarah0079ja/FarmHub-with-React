@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,700&display=swap');
+
+.newimg{
+    position: relative;
+    /* left: 20% */
+    
+}
+.newimg2{
+  position: absolute;
+  top: 14.7%;
+  /* left: 60%; */
+
+}
+.Howitworkss{
+    background-color: #fafafa;
+}
+.p6{
+    position: absolute;
+    top: 42%;
+    /* left: 80%; */
+    color: white;
+    font-size: 35px;
+}
+.Howw{
+    /* margin-left: 30px; */
+    margin-top: 30px;
+}
+.pic{
+    padding-left: 70px;
+}
+.work1{
+   
+    text-align: center !important;
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.625em;
+    margin-bottom: 60px;
+    display: block;
+
+}
+.work2{
+    margin-top: 40px;  
+    text-align: center !important;
+    font-size: 42px;
+    background: -webkit-linear-gradient(#ACBB16, #007547);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.how{
+    color: yellowgreen;
+    padding-top: 40px;
+}
+.works{
+    padding-top: 30px;
+    margin-top: 15px;
+    color: yellowgreen
+    /* margin-left: 20px; */
+}
+.card{
+    width: 15rem; 
+    border: 1px solid #ACBB16
+}
+ .newcad{
+     margin-top:1rem 0!important} 
+
+.coll{
+    max-width: 140%;
+    padding: 0px 
+}
+@media(max-width: 600px), (max-width: 680px) {
+    .ab1{
+        font-size: 0.5rem,
+    }
+
+    .Aboutus1{
+        font-size: 1rem;
+    }
+}

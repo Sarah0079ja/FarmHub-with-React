@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,700&display=swap');
+
+.body{
+    /* display: flex; */
+
+    /* padding: 0px 10px 10px 72px ; */
+    background-color:radial-ingredient(#e5e5e5, #fff, #e5e5e5)
+}
+
+.nav1{
+    
+     color: rgb(154, 205, 50); 
+    
+}
+
+@media (min-width: 992px) {
+    .jum {
+      margin-bottom: 200px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .text-bold{
+         font-weight: 700;
+    }
+    .text-300{
+       font-weight: 300 !important; 
+    }
+  }
+  .text-500 {
+  font-weight: 500 !important;
+}

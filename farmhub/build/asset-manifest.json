@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/css/main.6c14c4c2.chunk.css",
+    "main.js": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/js/main.554f1d46.chunk.js",
+    "main.js.map": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/js/main.554f1d46.chunk.js.map",
+    "runtime-main.js": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/js/runtime-main.e76e9384.js",
+    "runtime-main.js.map": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/js/runtime-main.e76e9384.js.map",
+    "static/css/2.17e5ed98.chunk.css": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.59c94a51.chunk.js": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/js/2.59c94a51.chunk.js",
+    "static/js/2.59c94a51.chunk.js.map": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/js/2.59c94a51.chunk.js.map",
+    "index.html": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/index.html",
+    "precache-manifest.62ced765c52788a164d2e01716cbcac1.js": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/precache-manifest.62ced765c52788a164d2e01716cbcac1.js",
+    "service-worker.js": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/css/2.17e5ed98.chunk.css.map",
+    "static/css/main.6c14c4c2.chunk.css.map": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/css/main.6c14c4c2.chunk.css.map",
+    "static/js/2.59c94a51.chunk.js.LICENSE": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/js/2.59c94a51.chunk.js.LICENSE",
+    "static/media/37891401-1.jpg": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/media/37891401-1.2a8fa80a.jpg",
+    "static/media/Track.png": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/media/Track.b8ff4980.png",
+    "static/media/chicken.jpeg": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/media/chicken.5fb025cc.jpeg",
+    "static/media/cow.jpeg": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/media/cow.fb74590f.jpeg",
+    "static/media/farm22.jpg": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/media/farm22.b739405a.jpg",
+    "static/media/farm3.jpg": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/media/farm3.124df9a3.jpg",
+    "static/media/farmer2.jpg": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/media/farmer2.347785cc.jpg",
+    "static/media/insurance.jpg": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/media/insurance.b32baa01.jpg",
+    "static/media/ppl11.jpg": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/media/ppl11.e1a1b431.jpg",
+    "static/media/ppl15.jpg": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/media/ppl15.dd21851f.jpg",
+    "static/media/rice.jpeg": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/media/rice.99433e70.jpeg",
+    "static/media/trust_badge_design_1024x1024@2x.webp": "%7BSarah0079ja%7D.github.io/%7BFarmHub-with-React%7D/static/media/trust_badge_design_1024x1024@2x.0738671e.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e76e9384.js",
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.59c94a51.chunk.js",
+    "static/css/main.6c14c4c2.chunk.css",
+    "static/js/main.554f1d46.chunk.js"
+  ]
+}
