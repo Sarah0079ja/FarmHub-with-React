@@ -19,6 +19,7 @@
 @media (min-width: 992px) {
     .jum {
       margin-bottom: 200px;
+      justify-items: center;
       display: -webkit-box;
       display: -ms-flexbox;
 
