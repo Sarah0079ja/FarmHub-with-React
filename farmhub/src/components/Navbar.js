@@ -56,6 +56,7 @@ import { Nav, Navbar, NavDropdown, NavItem} from 'react-bootstrap';
       return (
         <div className="nav1">
           <Navbar
+            right
             collapseOnSelect
             expand="lg"
             bg="dark"
@@ -69,47 +70,37 @@ import { Nav, Navbar, NavDropdown, NavItem} from 'react-bootstrap';
 
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="mr-auto">
+              <Nav className="ml-auto">
                 {isAuthenticated ? authLinks : guestLinks}
-                <Nav.Link>
-                  <a onClick={() => ScrolltoElement("about")}> About</a>
-                </Nav.Link>
+                <Nav right className="navright">
+                  <Nav.Link>
+                    <a onClick={() => ScrolltoElement("about")}> About</a>
+                  </Nav.Link>
 
-                {/* 
-                            <Nav.Link style={style2}>
-                              <Link to="/">FarmShop</Link>
-                               
-                               </Nav.Link> */}
+                  <NavDropdown
+                    title="Happy-Investors"
+                    id="collasible-nav-dropdown"
+                    bg="yellowgreen"
+                  >
+                    <NavDropdown.Item>
+                      <a
+                        onClick={() => ScrolltoElement("Security1")}
+                        // style={style2}
+                      >
+                        Happy Investors
+                      </a>
+                    </NavDropdown.Item>
 
-                <NavDropdown
-                  title="Happy-Investors"
-                  id="collasible-nav-dropdown"
-                  bg="yellowgreen"
-                >
-                  <NavDropdown.Item>
-                    <a
-                      onClick={() => ScrolltoElement("Security1")}
-                      // style={style2}
-                    >
-                      Happy Investors
-                    </a>
-                  </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <a onClick={() => ScrolltoElement("sec1")}>Security</a>
+                    </NavDropdown.Item>
+                  </NavDropdown>
 
-                  <NavDropdown.Item>
-                    <a onClick={() => ScrolltoElement("sec1")}>Security</a>
-                  </NavDropdown.Item>
-                </NavDropdown>
-
-                <Nav.Link>
-                  <a onClick={() => ScrolltoElement("footers")}>Contact</a>
-                </Nav.Link>
-
-                {/* <Link to="/">Home</Link>&nbsp; */}
-                {/* <Link to="/profile" style={style3}>Profile</Link> */}
-
-                {/* <FormModal /> */}
+                  <Nav.Link>
+                    <a onClick={() => ScrolltoElement("footers")}>Contact</a>
+                  </Nav.Link>
+                </Nav>
               </Nav>
-              <Navbar></Navbar>
             </Navbar.Collapse>
           </Navbar>
         </div>

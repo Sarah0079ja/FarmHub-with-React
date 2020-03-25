@@ -1,6 +1,4 @@
-import React, { Component} from "react";
- import { Link } from "react-router-dom";
-// import "./Stylecard.css";
+import React, { Component } from "react";
 import {
   Button,
   Modal,
@@ -10,9 +8,8 @@ import {
   // FormGroup,
   Label,
   Input,
-  NavItem,
   NavLink,
-  Alert,
+  Alert
   // NavItemProps
 } from "reactstrap";
 import { connect } from "react-redux";
@@ -27,7 +24,7 @@ class FormModal extends Component {
     lastname: "",
     email: "",
     password: "",
-    farmproduce: "",
+    farmproduce:"",
     amount: "",
     msg: null
   };
@@ -60,18 +57,15 @@ class FormModal extends Component {
 
   toggle = () => {
     //clear errors
-    console.log(this.state.modal)
     this.props.clearErrors();
     this.setState({
       modal: !this.state.modal
     });
-    console.log(this.state.modal)
   };
 
   onChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
-  
 
   onSubmit = e => {
     e.preventDefault();
@@ -87,34 +81,17 @@ class FormModal extends Component {
       farmproduce,
       amount
     };
-    //Attempt investmentform register
+    //Attempt to form
     this.props.form(newForm);
   };
 
   render() {
     return (
       <div>
-        { this.props.isAuthenticated ? (
-          <NavItem
-            onClick={this.toggle}
-            href="#"
-            className="btn btn-outline-success"
-          >
-            Invest Today
-          </NavItem>
-        ) : (
-          <h4 className="mb-5 ml-4" id="logg">
-            please log in
-          </h4>
-        )} 
-
-         {/* { <NavLink
-          onClick={this.toggle}
-          href="#"
-          className="btn btn-outline-success"
-        >
+        <NavLink onClick={this.toggle} href="#">
           Invest Today
-        </NavLink>   } */}
+        </NavLink>
+
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
           <ModalHeader toggle={this.toggle}>
             FarmHub Investment Form
@@ -124,7 +101,7 @@ class FormModal extends Component {
               <Alert color="danger">{this.state.msg} </Alert>
             ) : null}
             <Form onSubmit={this.onSubmit}>
-              <Label for="name">First Name</Label>
+              <Label for="firstname">First Name</Label>
               <Input
                 type="text"
                 name="name"
@@ -134,7 +111,7 @@ class FormModal extends Component {
                 onChange={this.onChange}
               />
 
-              <Label for="name">Last Name</Label>
+              <Label for="lastname">Last Name</Label>
               <Input
                 type="text"
                 name="name"
@@ -175,9 +152,8 @@ class FormModal extends Component {
                 <option>Cow</option>
                 <option>Chicken</option>
               </select>
-              <br />
-
-              <Label for="password">Amount</Label>
+              
+              <Label for="amount">Amount</Label>
               <Input
                 type="number"
                 name="amount"
@@ -187,12 +163,7 @@ class FormModal extends Component {
                 onChange={this.onChange}
               />
 
-              <Button
-                onClick={this.onSubmit}
-                color="dark"
-                style={{ marginTop: "2rem" }}
-                block
-              >
+              <Button onClick={this.onSubmit} color="dark" style={{ marginTop: "2rem" }} block>
                 Invest Today
               </Button>
             </Form>

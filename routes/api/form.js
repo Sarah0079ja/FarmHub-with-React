@@ -13,15 +13,15 @@ const Form = require("../../models/Form");
 
 router.post("/", (req, res) => {
   const { firstname, lastname, email, password, farmproduce, amount } = req.body;
-  console.log(req.form);
+  // console.log(req.form);
   //validation
-  if(!firstname || !lastname ||!email || !password || !farmproduce) {
+  if(!firstname || !lastname || !email || !password || !farmproduce) {
     return res.status(400).json({ msg: "Please enter all fields" });
   };
 
   if (amount < 50,000) {
-    return res.status(400).json({msg: "Minimum Investment amount is 50,000"})
-  };
+   return res.status(400).json({msg: "Minimum Investment amount is 50,000"})
+   };
   // //check existing formuser
 
   Form.findOne({ email })

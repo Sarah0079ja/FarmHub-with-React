@@ -1,13 +1,17 @@
 import React, { Component } from "react";
 
 import { Image } from "react-bootstrap";
-import img1 from "../../assets/farm22.jpg";
-import img2 from "../../assets/37891401-1.jpg";
+// import img1 from "../../assets/farm22.jpg";
+// import img2 from "../../assets/37891401-1.jpg";
 import layers from "../../assets/layers.png";
 import file from "../../assets/file.png";
+import ios1 from "../../assets/ios1.jpg";
+
+// import And from "../../assets/and.png";
 import payment from "../../assets/payment.png";
+
 import { Container, Row, Col } from "react-bootstrap";
-import How from "./How.css";
+import "./How.css"
 
 class Howitworks extends Component {
   render() {
@@ -15,11 +19,10 @@ class Howitworks extends Component {
       <div className="Howitworkss">
         <Container>
           <Row>
-           
             {/* <Col className="col-sm-3">
               <div className="col-sm-3">
                 <Container></Container>
-                {/* <Image src={img2} className="newimg" height="500px" />
+                <Image src={img2} className="newimg" height="500px" />
                 <Image
                   src={img1}
                   className="newimg2"
@@ -28,8 +31,8 @@ class Howitworks extends Component {
                   width="213px"
                 />
                 <h5 className="p6">FarmHub</h5>
-              </div> */}
-            {/* </Col>  */}
+              </div>
+            </Col> */}
             <Container className="col-sm-9">
               <Col className="Howw">
                 <div className="">
@@ -37,8 +40,8 @@ class Howitworks extends Component {
                     <Container>
                       <h3 className="work2">How it works</h3>
                       <p className="work1">
-                        In three easy steps, you can start investing and <br />
-                        earning a lot of money on high yield farms
+                        In three easy steps, you can start investing and earning
+                        a lot of money on high yield farms
                       </p>
                     </Container>
                   </Row>
@@ -46,29 +49,53 @@ class Howitworks extends Component {
                     <Col>
                       <img src={file} alt="" className="pic" />
                       <br></br>
-                      <p>
-                        1.Register/Login on FarmHub to join our investment
-                        Farming initiative
-                      </p>
+                      <div className="col steps-box">
+                        <div className="works-step">
+                          <div>1</div>
+                          <p>
+                            Register/Login on FarmHub to join our investment
+                            <p className="p1">Farming initiative</p>
+                          </p>
+                        </div>
+                      </div>
                     </Col>
                     <Col>
                       <img src={layers} alt="" className="pic" />
                       <br />
-                      2.Go through our Farmshop to have access to our different
-                      Farms using our Technology
+                      <div className="col step-box">
+                        <div className="works-step">
+                          <div>2</div>
+                          <p className="p1">
+                            Go through our Farmshop to have access to our
+                            <p>different Farms using our Technology</p>
+                          </p>
+                        </div>
+                      </div>
                     </Col>
 
                     <Col>
                       <img src={payment} alt="" className="pic" />
                       <br />
-                      <p>
-                        3. Fill the Farm Hub Investment Form and you will get a
-                        confirmation on investment Returns and updates for your money
-                      </p>
+                      <div className="col step-box">
+                        <div className="works-step">
+                          <div>3</div>
+                          <p>
+                            Fill the Farm Hub Investment Form and you will get a
+                            <p className="p1">
+                              confirmation on investment Returns and updates for
+                              your money
+                            </p>
+                          </p>
+                        </div>
+                      </div>
                     </Col>
                   </Row>
                 </div>
               </Col>
+              <a href="/" className="phoneapp">
+                <img src={ios1} alt="Ios app download" className="ios-img" />
+              </a>
+              
             </Container>
           </Row>
           {/* </Container> */}

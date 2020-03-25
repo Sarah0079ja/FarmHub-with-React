@@ -4,11 +4,7 @@ import NavBar from "./components/Navbar";
 import { BrowserRouter as Router, Switch} from "react-router-dom";
 import Route from "react-router-dom/Route";
 import "./App.css";
-// import About from "./components/About-us/About";
-// import FormContainer from './components/Container/FormContainer';
 import FormContainer from './pages/FormContainer';
-// import { Layout } from "./components/Layout";
-// import { Jumbotron } from "./components/Jumbotron";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./pages/Home";
 

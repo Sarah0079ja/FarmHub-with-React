@@ -1,8 +1,5 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const users = require("./routes/api/users");
-const form = require("./routes/api/form")
-const auth = require("./routes/api/auth");
 const config = require("config")
 const path = require('path');
 

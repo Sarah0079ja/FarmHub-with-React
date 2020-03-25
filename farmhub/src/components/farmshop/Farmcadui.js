@@ -11,7 +11,7 @@ const Card = (props) => {
       <Container id="card">
         <div className="card text-center shadow">
           <div className="overflow">
-            <img
+            <img  
               src={props.imgsrc}
               alt="chicken"
               className="card-img-top"

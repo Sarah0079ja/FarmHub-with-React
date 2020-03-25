@@ -12,6 +12,9 @@
      color: rgb(154, 205, 50); 
     
 }
+.navright{
+  display: flex
+}
 
 @media (min-width: 992px) {
     .jum {
