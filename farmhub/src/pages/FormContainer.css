@@ -1,12 +1,12 @@
  @import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,700&display=swap');
  
- @media (max-width: 768px) {
+ @media (max-width: 410px) {
     #classicformpage .navbar:not(.top-nav-collapse) {
      background: darkslategrey!important; 
     }
   }
   
-  @media (min-width: 700px){ 
+  @media (min-width: 380px){ 
     #forms {
       margin-left: 25%;
       margin-right: 20%;  

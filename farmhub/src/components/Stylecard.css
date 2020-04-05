@@ -12,6 +12,12 @@
      color: rgb(154, 205, 50); 
     
 }
+.span1{
+  padding: 12px;
+  
+  display: inline-block;
+  line-height: 20px;
+}
 .navright{
   display: flex
 }

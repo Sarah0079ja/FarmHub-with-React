@@ -1,9 +1,8 @@
 import React, { Component, Fragment} from 'react';
 import './Stylecard.css';
-// import NavBar from "./components/Navbar";
 
  import { Link} from 'react-router-dom';
-// import {Link, animateScroll as scroll} from 'react-scroll';
+
 import {scroller} from 'react-scroll';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types'; 
@@ -55,16 +54,8 @@ import { Nav, Navbar, NavDropdown, NavItem} from 'react-bootstrap';
       };
       return (
         <div className="nav1">
-          <Navbar
-            right
-            collapseOnSelect
-            expand="lg"
-            bg="dark"
-            variant="dark"
-            //  className="mb-5"
-          >
+          <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Brand>
-              {" "}
               <Link to="/">FarmHub</Link>
             </Navbar.Brand>
 
@@ -72,34 +63,41 @@ import { Nav, Navbar, NavDropdown, NavItem} from 'react-bootstrap';
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ml-auto">
                 {isAuthenticated ? authLinks : guestLinks}
-                <Nav right className="navright">
-                  <Nav.Link>
-                    <a onClick={() => ScrolltoElement("about")}> About</a>
-                  </Nav.Link>
+                {/* <NavItem right className="navright"> */}
+                <NavItem className="span1">
+                  <Link to="/" onClick={() => ScrolltoElement("about")}>
+                    {" "}
+                    About
+                  </Link>
+                </NavItem>
 
-                  <NavDropdown
-                    title="Happy-Investors"
-                    id="collasible-nav-dropdown"
-                    bg="yellowgreen"
-                  >
-                    <NavDropdown.Item>
-                      <a
-                        onClick={() => ScrolltoElement("Security1")}
-                        // style={style2}
-                      >
-                        Happy Investors
-                      </a>
-                    </NavDropdown.Item>
+                <NavDropdown
+                  title="Happy-Investors"
+                  id="collasible-nav-dropdown"
+                >
+                  <NavDropdown.Item>
+                    <Link
+                      to="/"
+                      onClick={() => ScrolltoElement("Security1")}
+                      // style={style2}
+                    >
+                      Happy Investors
+                    </Link>
+                  </NavDropdown.Item>
 
-                    <NavDropdown.Item>
-                      <a onClick={() => ScrolltoElement("sec1")}>Security</a>
-                    </NavDropdown.Item>
-                  </NavDropdown>
+                  <NavDropdown.Item>
+                    <Link to="/" onClick={() => ScrolltoElement("sec1")}>
+                      Security
+                    </Link>
+                  </NavDropdown.Item>
+                </NavDropdown>
 
-                  <Nav.Link>
-                    <a onClick={() => ScrolltoElement("footers")}>Contact</a>
-                  </Nav.Link>
-                </Nav>
+                <NavItem className="span1">
+                  <Link to="/" onClick={() => ScrolltoElement("footers")}>
+                    Contact
+                  </Link>
+                </NavItem>
+                {/* </NavItem> */}
               </Nav>
             </Navbar.Collapse>
           </Navbar>
