@@ -22,30 +22,23 @@ class About extends Component {
             <Element>
               <Container id="about">
                 <div className="Aboutus" style={style}>
-                
-                    <h1 className="ab1">About us</h1>
-                  
+                  <h1 className="ab1">About us</h1>
                 </div>
-                
 
                 <p className="Aboutus1">
+                  We connect small and medium scale farmers to investors and
+                  produce buyers globally to empower them scale their farms into
+                  commercial sizes and equip the next generation of farmers. In
+                  the last couple of years, Farmhub has worked with more than
+                  600 investors to invest over millions of naira in more than 50 verified
+                  and trusted farmers who are scaling fast to become commercial
+                  farmers.<br/> For people who want to be financially free and
+                  contribute to achieving food security for Africa, Farmhub
+                  is providing a simple, safe and sustainable platform for you
+                  to grow your funds whilst also enabling real farmers to grow
+                  food for the African populace. 
                   
-                  inappropriate behavior is often laughed off as “boys will be
-                  boys,” women face higher conduct standards especially in the
-                  workplace. That’s why it’s crucial that, as women, our
-                  behavior on the job is beyond reproach.<br></br>
-                  inappropriate behavior is often laughed off as “boys will be
-                  boys,” women face higher conduct standards especially in the
-                  workplace. That’s why it’s crucial that, as women, our
-                  behavior on the job is beyond reproach.<br></br>
-                  inappropriate behavior is often laughed off as “boys will be
-                  boys,” women face higher conduct standards especially in the
-                  workplace. That’s why it’s crucial that, as women, our
-                  behavior on the job is beyond reproach.<br></br>
-                  inappropriate behavior is often laughed off as “boys will be
-                  boys,” women face higher conduct standards especially in the
-                  workplace. That’s why it’s crucial that, as women, our
-                  behavior on the job is beyond reproach.
+                  
                 </p>
               </Container>
             </Element>

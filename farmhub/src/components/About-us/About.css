@@ -2,12 +2,14 @@
 .Aboutus{
     text-align: center;
     margin-top: 50px;
+    line-height: 80px;
     margin-bottom: 20px;
     font-size: 2rem;
 
 }
 .Aboutus1{
     margin-bottom: 120px;
+    line-height: 2.5rem;
 
 }
 #about{
@@ -17,7 +19,7 @@
 }
 .ab1{
      background: -webkit-linear-gradient(#ACBB16, #007547);
-    -webkit-background-clip: text;
+     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
@@ -29,5 +31,6 @@
 
     .Aboutus1{
         font-size: 1rem;
+        line-height: 2.5rem;
     }
 }

@@ -8,19 +8,28 @@
 }
 
 .nav1{
-    
-     color: rgb(154, 205, 50); 
+   /* display: flex; */
+    justify-content: space-between;
+     align-content: space-between;
+     padding: 1rem 0rem 0rem 0rem;
+    z-index: 1;
+    width: 100%;
+    opacity: 0.9;
+    /* margin-bottom: 1rem;   */
+    color: rgb(154, 205, 50); 
     
 }
+#reg1{
+  margin-left: 40px;
+  margin-right: 40px;
+}
 .span1{
-  padding: 12px;
   
+  margin-top: 2px;
   display: inline-block;
   line-height: 20px;
 }
-.navright{
-  display: flex
-}
+
 
 @media (min-width: 992px) {
     .jum {

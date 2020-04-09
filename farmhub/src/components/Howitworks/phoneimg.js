@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 
-// import { Image } from "react-bootstrap";
-// import img1 from "../../assets/farm22.jpg";
-// import img2 from "../../assets/37891401-1.jpg";
 import layers from "../../assets/layers.png";
 import file from "../../assets/file.png";
-import ios1 from "../../assets/ios1.jpg";
+import ios from "../../assets/ios.png";
+import android from "../../assets/android.jpg";
 
-// import And from "../../assets/and.png";
 import payment from "../../assets/payment.png";
 
 import { Container, Row, Col } from "react-bootstrap";
@@ -74,9 +71,16 @@ class Howitworks extends Component {
                   </Row>
                 </div>
               </Col>
-              <a href="/" className="phoneapp">
-                <img src={ios1} alt="Ios app download" className="ios-img" />
-              </a>
+              <div className="phoneapp">
+                <Row>
+                  <Col><img src={ios} alt="Ios app download" className="ios" /></Col>
+
+                <Col><img src={android} alt="android app download" className="android" /></Col>
+
+                </Row>
+                
+              </div>
+              
             </Container>
           </Row>
           {/* </Container> */}

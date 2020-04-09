@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,700&display=swap');
 
+@media (max-width: 370){
 .newimg{
     position: relative;
     /* left: 20% */
@@ -14,20 +15,7 @@
 .Howitworkss{
     background-color: #fafafa;
 }
-.works-step div {
-  color: #ACB316;
-  border: 2px solid #ACB316;
-  /*display: inline-block; */
-  border-radius: 50%;
-  height: 55px;
-  width: 55px;
-  text-align: center;
-  font-size: 150%;
-  padding: 10px;
-  float: left;
-  margin-right: 25px;
-  margin-bottom: 10px;
-}
+
 .works-step p {
   margin-bottom: 30px;
   padding-top: 2%;
@@ -47,15 +35,13 @@
     margin-top: 30px;
     display: block
 }
-.phoneapp{
+/* .phoneapp{
     margin-left: 20px;
-}
+} */
 .p1{
     margin-left: 80px;
 }
-.pic{
-    padding-left: 110px;
-}
+
 .work1{
    
     text-align: center !important;
@@ -68,14 +54,7 @@
     display: block;
 
 }
-.work2{
-    margin-top: 40px;  
-    text-align: center !important;
-    font-size: 42px;
-    background: -webkit-linear-gradient(#ACBB16, #007547);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 .how{
     color: yellowgreen;
     padding-top: 40px;
@@ -97,7 +76,41 @@
     max-width: 140%;
     padding: 0px 
 }
-@media(max-width: 600px), (max-width: 680px) {
+.phoneapp{
+    display: "center"
+}
+.ios{
+    margin-left: 30px
+}
+}
+.works-step div {
+  color: #ACB316;
+  border: 2px solid #ACB316;
+  /*display: inline-block; */
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  font-size: 150%;
+  padding: 10px;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+
+.work2{
+    margin-top: 40px;  
+    text-align: center !important;
+    font-size: 42px;
+    background: -webkit-linear-gradient(#ACBB16, #007547);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pic{
+    padding-left: 110px;
+}
+@media(max-width: 370px), (max-width: 410px) {
     .ab1{
         font-size: 0.5rem,
     }

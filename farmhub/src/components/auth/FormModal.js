@@ -89,7 +89,10 @@ class FormModal extends Component {
     return (
       <div>
         <NavLink onClick={this.toggle} href="#">
-          Invest Today
+          <button type="button" class="btn btn-outline-success">
+            Invest Today
+          </button>
+          
         </NavLink>
 
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
@@ -152,7 +155,7 @@ class FormModal extends Component {
                 <option>Cow</option>
                 <option>Chicken</option>
               </select>
-              
+
               <Label for="amount">Amount</Label>
               <Input
                 type="number"
@@ -163,7 +166,12 @@ class FormModal extends Component {
                 onChange={this.onChange}
               />
 
-              <Button onClick={this.onSubmit} color="dark" style={{ marginTop: "2rem" }} block>
+              <Button
+                onClick={this.onSubmit}
+                color="dark"
+                style={{ marginTop: "2rem" }}
+                block
+              >
                 Invest Today
               </Button>
             </Form>

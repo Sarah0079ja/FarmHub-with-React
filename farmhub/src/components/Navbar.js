@@ -1,8 +1,9 @@
 import React, { Component, Fragment} from 'react';
 import './Stylecard.css';
 
- import { Link} from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
+import {Container} from 'reactstrap';
 import {scroller} from 'react-scroll';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types'; 
@@ -39,7 +40,7 @@ import { Nav, Navbar, NavDropdown, NavItem} from 'react-bootstrap';
         </Fragment>
       ); 
       const guestLinks = (
-        <Fragment>
+        <Fragment id='reg1'>
           <NavItem>
             <RegisterModal />
           </NavItem>
@@ -55,51 +56,79 @@ import { Nav, Navbar, NavDropdown, NavItem} from 'react-bootstrap';
       return (
         <div className="nav1">
           <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand>
-              <Link to="/">FarmHub</Link>
-            </Navbar.Brand>
+             <Container>
+              <Navbar.Brand className="navcollapse">
+                <Link to="/">FarmHub</Link>
+              </Navbar.Brand>
 
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="ml-auto">
-                {isAuthenticated ? authLinks : guestLinks}
-                {/* <NavItem right className="navright"> */}
-                <NavItem className="span1">
-                  <Link to="/" onClick={() => ScrolltoElement("about")}>
-                    {" "}
-                    About
-                  </Link>
-                </NavItem>
-
-                <NavDropdown
-                  title="Happy-Investors"
-                  id="collasible-nav-dropdown"
+              <div className="ml-auto">
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse
+                  id="responsive-navbar-nav"
+                  className="navcollapse"
                 >
-                  <NavDropdown.Item>
-                    <Link
-                      to="/"
-                      onClick={() => ScrolltoElement("Security1")}
-                      // style={style2}
+                  <Nav className="ml-auto">
+                    {isAuthenticated ? authLinks : guestLinks}
+                    {/* <NavItem right className="navright"> */}
+                    <NavItem className="span1">
+                      <a>
+                        <Link
+                          a
+                          href="/"
+                          className="nav-link"
+                          onClick={() => ScrolltoElement("about")}
+                        >
+                          About
+                        </Link>
+                      </a>
+                      {/* <Link to="/" onClick={() => ScrolltoElement("about")}>
+                        {" "}
+                        About
+                      </Link> */}
+                    </NavItem>
+
+                    <NavDropdown
+                      title="Happy-Investors"
+                      id="collasible-nav-dropdown"
                     >
-                      Happy Investors
-                    </Link>
-                  </NavDropdown.Item>
+                      <NavDropdown.Item>
+                        <Link
+                          to="/"
+                          onClick={() => ScrolltoElement("Security1")}
+                          // style={style2}
+                        >
+                          Happy Investors
+                        </Link>
+                      </NavDropdown.Item>
 
-                  <NavDropdown.Item>
-                    <Link to="/" onClick={() => ScrolltoElement("sec1")}>
-                      Security
-                    </Link>
-                  </NavDropdown.Item>
-                </NavDropdown>
+                      <NavDropdown.Item>
+                        <Link to="/" onClick={() => ScrolltoElement("sec1")}>
+                          Security
+                        </Link>
+                      </NavDropdown.Item>
+                    </NavDropdown>
 
-                <NavItem className="span1">
-                  <Link to="/" onClick={() => ScrolltoElement("footers")}>
-                    Contact
-                  </Link>
-                </NavItem>
-                {/* </NavItem> */}
-              </Nav>
-            </Navbar.Collapse>
+                    <NavItem className="span1">
+                      <a>
+                        <Link
+                          a
+                          href="/"
+                          className="nav-link"
+                          onClick={() => ScrolltoElement("footers")}
+                        >
+                          Contact
+                        </Link>
+                      </a>
+
+                      {/* <Link to="/" onClick={() => ScrolltoElement("footers")}>
+                        Contact
+                      </Link> */}
+                    </NavItem>
+                    {/* </NavItem> */}
+                  </Nav>
+                </Navbar.Collapse>
+              </div>
+            </Container>
           </Navbar>
         </div>
       );

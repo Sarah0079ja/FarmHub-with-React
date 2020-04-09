@@ -11,12 +11,16 @@ const Card = (props) => {
       <Container id="card">
         <div className="card text-center shadow">
           <div className="overflow">
+            
             <img  
               src={props.imgsrc}
               alt="chicken"
               className="card-img-top"
               height="200px"
             />
+            
+            <img src={props.xsrc} alt='' className='soldout' height='40px'/>
+            <img src={props.ysrc} alt='' className='open' height='40px'/>
           </div>
           <div className="card-body text-dark">
             <h4 className="card-title">{props.title}</h4>

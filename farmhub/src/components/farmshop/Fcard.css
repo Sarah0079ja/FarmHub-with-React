@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,700&display=swap');
 
+@media (max-width: 320px) {
 body{
     background: radial-gradient (#e5e5e5, #fff, #e5e5e5);
     justify-self: center;
@@ -8,15 +9,7 @@ body{
 .card:hover{
     box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253)!important
 }
-.f1{
-    color:yellowgreen;
-    text-align: center;
-    padding-top: 6rem;
-     background: -webkit-linear-gradient(#ACBB16, #007547);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
-}
 #card{
     background-color: #fafafa;
 }
@@ -45,11 +38,40 @@ body{
 .card-img-top{
     transform:scale(1);
     transition:transform 0.5s ease;
+    /* position: absolute; */
+    /* top: 60px; */
+    /* left: 80px; */
+}
+.soldout{
+    position: absolute;
+      bottom: 207px;
+      left: 0px;
+      fill-opacity: 0.5;
+      width: 40px
+}
+.open{
+    position: absolute;
+      bottom: 207px;
+      left: 0px;
+      fill-opacity: 0.5;
+      width: 40px
 }
 .card-img-top:hover{
     transform: scale(1.8);
 }
-@media(max-width: 600px), (max-width: 800px) {
+}
+
+.f1{
+    color:yellowgreen;
+    text-align: center;
+    padding-top: 6rem;
+     background: -webkit-linear-gradient(#ACBB16, #007547);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+@media(max-width: 320px), (max-width: 400px) {
     .card-body{
         font-size: 0.5rem,
     }
